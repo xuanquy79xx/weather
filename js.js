@@ -136,7 +136,7 @@ function showDetails() {
 function showChart() {
     let showChart = document.querySelector(".weatherNow__chart")
     let chartHtml = ''
-    for (let i = 0; i < 11; i++) {
+    for (let i = 0; i < 10; i++) {
         if (hourly[i].dt)
             chartHtml += `
                      <div class="--item"
