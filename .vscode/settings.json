@@ -1,0 +1,14 @@
+{
+    "eslint.enable": true,
+    "editor.fontLigatures": true,
+    "editor.cursorBlinking": "expand", // change cursor
+    "editor.lineNumbers": "relative",
+    "editor.renderLineHighlight": "all",
+    "editor.lineHeight": 25, // khoang cach lineHeight
+    // "editor.wordWrap": "on", // read word better
+    "editor.formatOnType": true, // tu dong fomat
+    "editor.formatOnPaste": true, // tu dong fomat
+    "editor.mouseWheelZoom": true, // tu dong zoom khi dung chuot
+    "workbench.startupEditor": "newUntitledFile", // tu dong mo file moi khi mo vscode
+    "files.trimTrailingWhitespace": true, // tu dong trim cac whitespace khi save
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" async>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- weather -->
+    <div id="weather">
+        <div class="weatherNow">
+            <div class="weather__input">
+                <div class="searchByCityName">
+                    <input id="list" list="languages" placeholder="tìm theo tên thành phố" />
+                    <button onclick="searchByCityName()">Search</button>
+                    <datalist id="languages"> </datalist>
+                </div>
+                <div class="searchByGeolocation">
+                    <input id="search__lat" placeholder="vĩ độ" /> <br />
+                    <input id="search__lon" placeholder="kinh độ" />
+                    <button onclick="searchByGeolocation()">Search</button>
+
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;  padding-top: 100px;">
+                <div class="__left">
+                    <div class="weatherNow__information">
+                        <div class="weatherNow__information--time">
+                            <h2>------</h2>
+                            <p>------</p>
+                            <p>------</p>
+                            <strong data-text="bình minh"><img src="./images/sunrise.svg" alt="sunrise" /> <span>
+                                    ------</span></strong>
+                            <strong data-text="hoàng hôn"><img src="./images/sunset.svg" alt="sunset" /> <span>
+                                    ------</span></strong>
+                        </div>
+                        <div class="weatherNow__information--mainContent">
+                            <div class="--main">
+                                <p>----</p>
+                                <h1>---- &deg;C</h1>
+                            </div>
+                            <strong>----</strong>
+                            <strong>----</strong>
+                            <strong>----</strong>
+                        </div>
+                        <div class="weatherNow__information--more">
+                            <p>----</p>
+                            <p>----</p>
+                            <p>----</p>
+                        </div>
+                    </div>
+                    <div class="weatherNow__chart"> </div>
+                </div>
+                <div class="__right">
+                    <div class="__daily--item"> </div>
+                    <div class="__daily--item"> </div>
+                    <div class="__daily--item"> </div>
+                    <div class="__daily--item"> </div>
+                    <div class="__daily--item"> </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="weatherLists" class="weatherLists"></div> -->
+
+    </div>
+
+    <script src="./js.js"></script>
+    <!-- end weather -->
+</body>
+
+</html>
